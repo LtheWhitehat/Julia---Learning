@@ -111,5 +111,31 @@ def adams_bashforth_2(f, t0, y0, h, N):
 
     return t_values, y_values, y_bash, y_corr
 
-# Example usage:
-# Define the ODE: dy/dt = f(t, y)
+
+
+# def rk4_system(f, t, y, h):
+#     print(y)
+#     k1 = h * f(t, y)
+#     k2 = h * f(t + h / 2, y + k1 / 2)
+#     k3 = h * f(t + h / 2, y + k2 / 2)
+#     k4 = h * f(t + h, y + k3)
+#     return y + (k1 + 2 * k2 + 2 * k3 + k4) / 6
+
+# t0 = 0
+# y0 = [0, 1]  # Initial values for y and z
+# h = 0.1
+# N = 10
+
+# t_values = [t0]
+# y_values = [y0]
+
+# for i in range(N):
+#     t_i = t_values[-1]
+#     y_i = y_values[-1]
+#     y_i_plus_1 = rk4_system(ode_system, t_i, y_i, h)
+#     t_values.append(t_i + h)
+#     y_values.append(y_i_plus_1)
+
+# # Print the results
+# for t, y in zip(t_values, y_values):
+#     print(f"t: {t}, y: {y}")
